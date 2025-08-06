@@ -15,7 +15,7 @@
           "options": {
             "browser": "src/main.ts",
             "outputPath": "dist/rtsolutions",
-            "baseHref": "/rtsolutions/",
+            "baseHref": "/RS-solutions/",
             "polyfills": [
               "zone.js"
             ],
