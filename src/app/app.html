@@ -1,0 +1,67 @@
+<div style="background-color: rgb(221, 228, 255);">
+<header class="navbar">
+  <div class="logo">⚡ SN Solutions</div>
+  <nav>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Customers</a>
+    <a href="#">Resources</a>
+  </nav>
+  <div class="auth-buttons">
+    <!-- <button class="text-btn">Sign In</button> -->
+    <button (click)="showContact = !showContact" class="primary-btn">Contact Us</button>
+  </div>
+  <div *ngIf="showContact" class="contact-box">
+  <h3>Contact Details</h3>
+  <p><strong>Name:</strong> Ravi Seshu</p>
+  <p><strong>Email:</strong> ravi@example.com</p>
+  <p><strong>Phone:</strong> +91-9876543210</p>
+  <button (click)="showContact = false">Close</button>
+</div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="badge">✅ Trusted by businesses</div>
+    <h1>From idea to execution  we design, build, deploy, and support powerful applications that drive your business forward.</h1>
+    <p>Stop drowning in repetitive support requests. Our AI-powered platform automatically resolves common issues, freeing your team to focus on what matters most—growing your business.</p>
+  </div>
+
+  <div class="hero-right">
+    <div class="dashboard-card">
+      <div class="dashboard-header">Highlights</div>
+      <div class="dashboard-stats">
+        <div class="stat-box">
+          <h3>100%</h3>
+          <p>Empower</p>
+        </div>
+        <div class="stat-box green">
+          <h3>2.3s</h3>
+          <p>Avg Response</p>
+        </div>
+      </div>
+      <div class="chat-box">
+        <p><strong>⚡</strong>Application Development</p>
+        <p><strong>☁️</strong>Hosting, Deployment, and Support </p>
+        <p><strong>🤝</strong>Post-Launch Maintenance & Upgrades</p>
+        <p><strong>👤</strong> One-to-One Training</p>
+        <p><strong>💡</strong> Learn Business Concepts, SQL, NoSQL, Programming & Data Structures</p>
+        <p><strong>📈</strong>Doubt Clearing in Real-Time for deeper understanding</p>
+        <p><strong>🕒</strong> Flexible Timings to suit working professionals or students</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="tile-section">
+  <div class="tile" *ngFor="let tile of tiles">
+    <div class="tile-content">
+      <h4>{{ tile.title }}</h4>
+      <h2>{{ tile.heading }}</h2>
+      <p>{{ tile.description }}</p>
+    </div>
+    <div class="tile-icon">
+      <img [src]="tile.icon" alt="icon" />
+    </div>
+  </div>
+</div>
+</div>
