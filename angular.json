@@ -14,7 +14,8 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "baseHref": "/RS-solutions/",
+            "outputPath": "dist/rtsolutions",
+            "baseHref": "/rtsolutions/",
             "polyfills": [
               "zone.js"
             ],
@@ -91,6 +92,9 @@
               "src/styles.css"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
