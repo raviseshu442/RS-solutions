@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "baseHref": "/your-repo-name/",
+            "baseHref": "/RS-solutions/",
             "polyfills": [
               "zone.js"
             ],
